@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+var heads = 0;
+var total = 0;
+var ratio = 0;
+function coinFlip() {   
+  heads += Math.floor(Math.random() * 2);
+  total++;
+  ratio = (heads / total) * 100 + "%";
+}
+
+
+
+//Class Problem
+//Write a 'while' Loop below using the coinflip function to print 10 times
+//while (total < 20) {
+  //total+=1;
+  //coinFlip();
+  //console.log(heads + " out of " + total + ": " + ratio);
+  
+
+//};
+  
+//Using For Loops: Homework
+
+// print all even numbers between 1 and 20 (hint: don't forget to increment)
+//while (total < 20){
+  //total++;
+  //coinFlip();
+  //console.log(heads + " out of " + total + ": " + ratio);
+//};
+
+//Starting at 7, print out all multiples of 7 below 100
+
+
+//Starting at 10, print out all numbers down to 0
+while (total < -1){
+  total--;
+  coinflip();
+  console.log(heads + "out of " + total + ": " + ratio)
+};
